@@ -1,0 +1,1 @@
+将valid放在layui.use([xxx])中执行即可成功

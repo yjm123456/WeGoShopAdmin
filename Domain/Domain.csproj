@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{482F6842-6E9B-4C3B-856E-297659F7F337}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\Input\BaseJsonInput.cs" />
+    <Compile Include="DTO\Input\Finance\InsertSaleManDepositInfoInput.cs" />
+    <Compile Include="DTO\Input\Finance\SaleManDepositInfoPagedInput.cs" />
+    <Compile Include="DTO\Input\Finance\SalesManBalanceDetailsInfoPagedInput.cs" />
+    <Compile Include="DTO\Input\Finance\UpdateDepositStateInput.cs" />
+    <Compile Include="DTO\Input\Information\InformationInfoPagedInput.cs" />
+    <Compile Include="DTO\Input\SalesMan\InsertSaleManInfoInput.cs" />
+    <Compile Include="DTO\Input\SalesMan\SalesManInfoPagedInput.cs" />
+    <Compile Include="DTO\Input\SalesMan\SalesManLevelPagedInput.cs" />
+    <Compile Include="DTO\Input\SalesMan\UpdateSaleManBalanceInput.cs" />
+    <Compile Include="DTO\Input\SalesMan\UpdateSaleManInfoInput.cs" />
+    <Compile Include="DTO\Input\SalesMan\UpdateSaleManNameInput.cs" />
+    <Compile Include="DTO\Input\ServerPath\InsertServerPathDetailsInput.cs" />
+    <Compile Include="DTO\Input\ServerPath\InsertServerPathInput.cs" />
+    <Compile Include="DTO\Input\ServerPath\ServerPathInfoDetailsPagedInput.cs" />
+    <Compile Include="DTO\Input\ServerPath\ServerPathInfoPagedInput.cs" />
+    <Compile Include="DTO\Input\ServerPath\UpdateServerPathInput.cs" />
+    <Compile Include="DTO\Input\ShopManage\BusinessVersionPagedInput.cs" />
+    <Compile Include="DTO\Input\ShopManage\SignedCompanyInsertInput.cs" />
+    <Compile Include="DTO\Input\ShopManage\UpdateBusinessIdInput.cs" />
+    <Compile Include="DTO\Input\ShopManage\UpdateShopPassWordInput.cs" />
+    <Compile Include="DTO\Input\ShopManage\UpdateVerifyStateInput.cs" />
+    <Compile Include="DTO\Output\BaseOutput.cs" />
+    <Compile Include="DTO\Output\Finance\SaleManDepositInfoOutput.cs" />
+    <Compile Include="DTO\Output\Finance\SaleManSettleAccountOutput.cs" />
+    <Compile Include="DTO\Output\Finance\SalesManBalanceDetailsInfoOutput.cs" />
+    <Compile Include="DTO\Output\Information\InformationInfoPagedOutput.cs" />
+    <Compile Include="DTO\Output\SalesMan\GetSaleManLevelByIdOutPut.cs" />
+    <Compile Include="DTO\Output\SalesMan\SaleManLevelPagedOutput.cs" />
+    <Compile Include="DTO\Output\SalesMan\SalesManInfoPagedOutput.cs" />
+    <Compile Include="DTO\Output\ServerPath\ServerPathDetailsPagedOutput.cs" />
+    <Compile Include="DTO\Output\ServerPath\ServerPathOutput.cs" />
+    <Compile Include="DTO\Output\ServerPath\ServerPathPagedOutput.cs" />
+    <Compile Include="DTO\Output\ShopManage\BusinessVersionPagedOutput.cs" />
+    <Compile Include="DTO\Output\ShopManage\ImgUrlOutput.cs" />
+    <Compile Include="Enums\FinanceEnums\DepositWayEnum.cs" />
+    <Compile Include="Enums\FinanceEnums\DepostiStateEnum.cs" />
+    <Compile Include="Enums\FinanceEnums\SaleManBalanceDetailsStateEnum.cs" />
+    <Compile Include="Enums\InformationEnum\InformationStateEnum.cs" />
+    <Compile Include="Enums\InformationEnum\SendTargetEnum.cs" />
+    <Compile Include="Enums\SaleManEnums\SaleManLevelStateEnum.cs" />
+    <Compile Include="Enums\ShopCompanyEnums\AccountVersionEnum.cs" />
+    <Compile Include="Enums\ShopCompanyEnums\AuditStateEnum.cs" />
+    <Compile Include="Enums\GetEnumsDescriptions.cs" />
+    <Compile Include="Enums\ShopCompanyEnums\BusinessVersionStateEnum.cs" />
+    <Compile Include="Enums\ShopCompanyEnums\InstitutionalTypeEnum.cs" />
+    <Compile Include="Enums\ShopCompanyEnums\ShopUserStateEnum.cs" />
+    <Compile Include="Enums\ShopCompanyEnums\ShopUsingTypeEnum.cs" />
+    <Compile Include="BasicClass\BaseClass.cs" />
+    <Compile Include="BasicClass\BasePage.cs" />
+    <Compile Include="BasicClass\PagedUtity.cs" />
+    <Compile Include="BasicClass\ReturnClass.cs" />
+    <Compile Include="DTO\ActionResult.cs" />
+    <Compile Include="DTO\Input\AdminQueryInput.cs" />
+    <Compile Include="DTO\Input\ShopManage\ShopManagePagedInput.cs" />
+    <Compile Include="DTO\Input\ShopManage\UpdateShopStateInput.cs" />
+    <Compile Include="DTO\LayuiPagedResult.cs" />
+    <Compile Include="DTO\Output\ShopManage\ShopManagePagedOutput.cs" />
+    <Compile Include="Enums\WeChatStationEnum\WechatStationTypeEnum.cs" />
+    <Compile Include="Finance\SaleManBalanceDetails.cs" />
+    <Compile Include="Finance\SaleManDepositInfo.cs" />
+    <Compile Include="Finance\SaleManSettleAccount.cs" />
+    <Compile Include="Information\InformationInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesMan\SaleManLevel.cs" />
+    <Compile Include="SalesMan\SalesManInfo.cs" />
+    <Compile Include="ServerPath\ServerPathInfo.cs" />
+    <Compile Include="ServerPath\ServerPathDetails.cs" />
+    <Compile Include="ShopCompany\BusinessVersion.cs" />
+    <Compile Include="ShopCompany\BusinessInfo.cs" />
+    <Compile Include="User\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

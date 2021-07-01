@@ -1,0 +1,110 @@
+﻿<html>
+<head>
+    <link href="assets/css/Register/normalize.css" rel="stylesheet" />
+    <link href="assets/css/Register/jquery.idealforms.min.css" rel="stylesheet" />
+    <link href="assets/css/Register/jquery-ui.css" rel="stylesheet" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/Register/jquery.query.js"></script>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div {
+            width: 70%;
+            text-align: left;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+    </style>
+    <script type="text/javascript">
+        function disable() {
+            document.getElementById("accept").disabled = true
+        }
+        function enable() {
+            document.getElementById("accept").disabled = false
+        }
+        function Register() {
+            window.location.href = "Register.aspx";
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var version = "";
+        getParamData();
+        function getParamData() {
+            var Version = $.query.get("Version");
+            if (Version != null) {
+                //获取选中值
+            
+                if (Version == "1") {
+                    version = 1;
+                }
+                if (Version == "2") {
+                    version = 2;
+                }
+                if (Version == "3") {
+                    version = 3;
+                }
+            }   
+        }
+        function Register() {
+            window.location.href = "Register.aspx?Version=" + version;
+        }
+    </script>
+    <div>
+        法律风险声明：<br />
+        一、 平台与入驻商家法律风险提示<br />
+        商户入驻平台上架销售产品，平台需要求商户提交资质、产品信息并严谨审核。平台的法律身份是第三方销售平台，承担审核责任<br />
+        (一)商户入驻资质审核<br />
+        1.基础性入驻资质(注：每一类产品商户均需提供)<br />
+        ①三证：营业执照+组织机构代码证+税务登记证<br />
+        ②法定代表人身份证明(提交法代身份证正反面、法代证明本人签字)<br />
+        ③授权代表人授权证明(授权证明文件同页附加授权代表身份证正反面，加盖商家公章)<br />
+        ④开户行许可证<br />
+        2.入驻商家销售授权链：入驻商家的销售授权要形成完整的授权链，具体审核以下文件：<br />
+        ① 注册商标：审核注册商标的商标注册权人，确定产品的原始销售权属;审核注册商标的有效期、延展有效期;正在申请的商标，由商家提交受理单。<br />
+        ② 销售授权文件：审核销售授权文件的真伪。(重点审核公章的真伪、授权链的完整、授权的区域范围)<br />
+        ③ 产品的质量检测报告。(重点审核质量检测报告针对的产品是否为入驻产品、质检报告的有效期：半年)<br />
+        (二)商户入驻协议<br />
+        1.质保金、保证金、风险备用金的收取条款;(该项资金用于消费者诉讼风险，一旦出现涉诉或投诉纠纷，平台有权先行冻结上述资金，用于理赔消费者)<br />
+        2.平台服务费条款参照官网定价及合同操作;<br />
+        3.产品退货、退款与宣传广告，产品质量引起的损害赔偿需商户自行与客户进行沟通，与本软件提供商无关，例如：<br />
+        1.产品质量纠纷<br />
+        2.价格欺诈<br />
+        3.职业打假人诉讼<br />
+        4.工商、电商协会投诉<br />
+        5.行政处罚<br />
+        为防止商家涉及虚假广告的投诉、诉讼或电商协会处罚风险。商家应重点注意以下几点：<br />
+        1.节假日注意虚假宣传、夸大宣传与价格调试。<br />
+        2.2015年《广告法》的顶级、绝对化用语。<br />
+        3.返利优惠、有奖促销的界限。<br />
+        4.涉及不正当竞争的诋毁性用语。<br />
+        若涉及到消费者诉讼风险，则商家应：<br />
+        1：对客户进行退换货、退款处理，防止激化客户电商投诉。<br />
+        2：联系商家调解赔付，出具退换货、理赔方案，争取消费者撤诉，降低电商协会涉诉率记录。<br />
+        知识产权侵权<br />
+        1.商标侵权<br />
+        禁止商家使用、假冒他人商标入驻上线平台。<br />
+        2.著作权侵权<br />
+        禁止商家运用上传功能上传没有著作权的小说、链接。一经发现，平台将立即下架该侵权产品，并对商家进行警告处理。若多次警告无效，平台将禁用商家的所有商户号并对商家进行侵权索赔<br />
+        第三方支付公司<br />
+        资金只能根据平台指令在第三方支付公司账户下做转入、转出指令，平台不构成资金池， 目前平台使用的三方支付为：支付宝，微信，盛付通等支付公司，请商户自行决定开户方向并提供商户号信息<br />
+
+        免责声明：<br />
+        1、对于使用、利用本商城平台从事的相关行为、商城平台中所涉信息等，用户应秉着诚实、守信、善意之理念进行，不得有恶意欺骗、欺诈之行为，亦不得故意或过失损害本平台的合法权益；<br />
+        2、凡是在本商城从事相关行为的企业、团体、单位、个人，均视为具备独立从事民事活动的资格，对于因物流服务（包括但不限于商品出现污染、变质、损坏、缺失、灭失、发货或交货迟延）等而造成用户的任何损失，本商城将尽量协调处理，非因商品质量问题本平台不承担任何责任；<br />
+        3、本商城有权对商品信息（包括但不限于商品价格、规格、种类、型号）进行调整，如上架无版权小说，书籍等，对于用户因商家之调整行为而遭受的损失，本平台不承担任何责任；<br />
+        4、用户应严格按照本商城服务协议从事相关行为，如服务协议发生变更、修正，用户应按变更、修正后的协议执行，本商城不因协议之变更、修正而承担任何责任；<br />
+        5、会员用户拥有微购商城平台网站内所有信息内容（除平台商家发布的商品信息外，包括但不限于文字、图片、软件、音频、视频）的版权<br />
+
+    </div>
+    <input class="ideal-label" type="checkBox" onclick="if (this.checked) {enable()} else {disable()}">同意协议
+    <br />
+    <br />
+    <br />
+    <input type="button" id="accept" disabled="true" value="下一步" onclick="Register()">
+
+</body>
+</html>
