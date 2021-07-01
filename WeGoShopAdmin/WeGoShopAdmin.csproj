@@ -190,6 +190,8 @@
     <Content Include="images\Account\Balance.png" />
     <Content Include="images\Account\DepositApplication.png" />
     <Content Include="images\Account\SaleManDepositRecord.png" />
+    <Content Include="images\Home\PersonalInfo.png" />
+    <Content Include="images\Home\storeLogo.png" />
     <Content Include="images\IndexImage\default.jpg" />
     <Content Include="images\IndexImage\shoppingCenter.png" />
     <Content Include="images\Information\infoLogo.png" />
