@@ -401,7 +401,7 @@
                     <div class="pb_pricing_v1 p-5 border text-center bg-white">
                         <h3>旗舰版</h3>
                         <span class="price"><sup>¥</sup>398/<span>/月</span></span>
-                        <p class="pb_font-15">围绕会员生命周期，深度运营客户数据，实现精准营销</p>
+                        <p class="pb_font-15">围绕会员生命周期，深度运营客户数据，形成客户数据行为生态，实现精准营销</p>
                         <p class="mb-0"><a href="Agreement.html?Version=3" role="button" class="btn btn-primary btn-shadow-blue">选择</a></p>
                     </div>
                 </div>
